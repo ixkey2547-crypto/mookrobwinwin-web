@@ -175,17 +175,18 @@
       transition: var(--transition);
     }
     .mobile-menu {
-      display: none;
-      position: absolute;
-      top: 68px;
-      left: 0; right: 0;
-      background: rgba(251,246,237,0.98);
-      border-bottom: 1.5px solid var(--gold-pale);
-      padding: 1rem;
-      flex-direction: column;
-      gap: 0.5rem;
-      box-shadow: var(--shadow-md);
-      z-index: 99;
+  display: none;
+  position: fixed; /* 🔥 เปลี่ยนจาก absolute */
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: rgba(251,246,237,0.98);
+  border-bottom: 1.5px solid var(--gold-pale);
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-md);
+  z-index: 999; /* 🔥 เพิ่มให้ลอยเหนือ */
     }
     .mobile-menu.open { display: flex; }
     .mobile-menu a, .mobile-menu button {
