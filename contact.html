@@ -9,8 +9,8 @@
   })(window,document,'script','dataLayer','GTM-MVZ7CMPR');</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ติดต่อเรา | Ready-หมูกรอบ</title>
-  <meta name="description" content="ติดต่อ Ready-หมูกรอบ โทร 063-601-2099 LINE: @ready-หมูกรอบ Facebook สั่งซื้อหมูกรอบคุณภาพพรีเมียม" />
+  <title>ติดต่อเรา | WINWIN-หมูกรอบ</title>
+  <meta name="description" content="ติดต่อ WINWIN-หมูกรอบ โทร 063-601-2099 LINE: @WINWIN-หมูกรอบ Facebook สั่งซื้อหมูกรอบคุณภาพพรีเมียม" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Noto+Serif+Thai:wght@400;600;700;900&display=swap" rel="stylesheet" />
@@ -26,23 +26,131 @@
     button{cursor:pointer;border:none;background:none;font-family:inherit;}
 
     /* NAVBAR */
-    .navbar{position:sticky;top:0;z-index:100;background:rgba(251,246,237,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1.5px solid var(--gold-pale);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 16px rgba(139,26,26,0.06);}
-    .navbar-logo{display:flex;align-items:center;gap:0.5rem;}
-    .navbar-logo-icon{width:38px;height:38px;background:linear-gradient(135deg,var(--red),var(--red-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;box-shadow:var(--shadow-sm);flex-shrink:0;}
-    .navbar-logo-text{font-family:'Noto Serif Thai',serif;font-weight:700;font-size:1.15rem;color:var(--red-dark);line-height:1.2;}
-    .navbar-logo-text span{display:block;font-size:0.7rem;font-family:'Sarabun',sans-serif;font-weight:400;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;}
-    .navbar-nav{display:flex;align-items:center;gap:0.25rem;}
-    .navbar-nav a{font-size:0.92rem;font-weight:500;color:var(--gray-700);padding:0.4rem 0.85rem;border-radius:8px;transition:color var(--transition),background var(--transition);}
-    .navbar-nav a:hover,.navbar-nav a.active{color:var(--red);background:var(--gold-pale);}
-    .navbar-nav a.active{font-weight:700;}
-    .navbar-cta{display:inline-flex;align-items:center;background:linear-gradient(135deg,var(--red),var(--red-dark));color:var(--white)!important;font-weight:600;font-size:0.92rem;padding:0.45rem 1.2rem;border-radius:50px;box-shadow:0 3px 12px rgba(139,26,26,0.25);transition:transform var(--transition),box-shadow var(--transition);}
-    .navbar-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(139,26,26,0.35);}
-    .hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none;}
-    .hamburger span{display:block;width:24px;height:2px;background:var(--red-dark);border-radius:2px;}
-    .mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(251,246,237,0.98);border-bottom:1.5px solid var(--gold-pale);padding:1rem;flex-direction:column;gap:0.5rem;box-shadow:var(--shadow-md);z-index:999;}
-    .mobile-menu.open{display:flex;}
-    .mobile-menu a{font-size:1rem;font-weight:500;color:var(--gray-700);padding:0.6rem 1rem;border-radius:8px;transition:background var(--transition),color var(--transition);}
-    .mobile-menu a:hover{background:var(--gold-pale);color:var(--red);}
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(251,246,237,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1.5px solid var(--gold-pale);
+      padding: 0 2rem;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 16px rgba(139,26,26,0.06);
+    }
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      }
+    .navbar-logo-icon {
+  width: 38px;
+  height: 38px;
+  background: none;        /* ❗ เอาพื้นแดงออก */
+  box-shadow: none;        /* ❗ เอาเงาออก */
+  border-radius: 8px;
+  overflow: hidden;
+      }
+    .navbar-logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* ❗ สำคัญ */
+}
+    
+    .navbar-logo-text {
+      font-family: 'Noto Serif Thai', serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--red-dark);
+      line-height: 1.2;
+    }
+    .navbar-logo-text span {
+      display: block;
+      font-size: 0.7rem;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .navbar-nav a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--gray-700);
+      padding: 0.4rem 0.85rem;
+      border-radius: 8px;
+      transition: color var(--transition), background var(--transition);
+    }
+    .navbar-nav a:hover, .navbar-nav a.active {
+      color: var(--red);
+      background: var(--gold-pale);
+    }
+    .navbar-nav a.active { font-weight: 700; color: var(--red); }
+    .navbar-cta {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--red), var(--red-dark));
+      color: var(--white) !important;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 0.45rem 1.2rem;
+      border-radius: 50px;
+      box-shadow: 0 3px 12px rgba(139,26,26,0.25);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .navbar-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(139,26,26,0.35);
+      background: var(--red-light) !important;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--red-dark);
+      border-radius: 2px;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px;
+      left: 0; right: 0;
+      background: rgba(251,246,237,0.98);
+      border-bottom: 1.5px solid var(--gold-pale);
+      padding: 1rem;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: var(--shadow-md);
+      z-index: 999;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--gray-700);
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: background var(--transition), color var(--transition);
+    }
+    .mobile-menu a:hover { background: var(--gold-pale); color: var(--red); }
 
     /* BUTTONS */
     .btn{display:inline-flex;align-items:center;gap:0.4rem;font-family:'Sarabun',sans-serif;font-weight:600;font-size:0.95rem;padding:0.7rem 1.8rem;border-radius:50px;border:none;cursor:pointer;transition:transform var(--transition),box-shadow var(--transition);letter-spacing:0.01em;text-decoration:none;}
@@ -144,8 +252,13 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <a href="index.html" class="navbar-logo">
-    <div class="navbar-logo-icon">🥩</div>
-    <div class="navbar-logo-text">Ready-หมูกรอบ<span>Premium Crispy Pork</span></div>
+    <div class="navbar-logo-icon">
+      <img src="images/RealLogo.png" alt="logo">
+    </div>
+    <div class="navbar-logo-text">
+      WINWIN-หมูกรอบ
+      <span>Premium Crispy Pork</span>
+    </div>
   </a>
   <ul class="navbar-nav">
     <li><a href="index.html">หน้าแรก</a></li>
@@ -194,9 +307,9 @@
               <a href="tel:0636012099">063-601-2099</a>
             </div>
             <div class="contact-card-main" style="margin-top:0.15rem;">
-              <a href="tel:0855417053">085-541-7053</a>
+              <a href="tel:0621516999">062-151-6999</a>
             </div>
-            <div class="contact-card-sub">โทรสั่งได้ทันที จ.–ส. 08:00–20:00 น.</div>
+            <div class="contact-card-sub">โทรสั่งได้ทันที จ.–อา. 08:30–00:00 น.</div>
             <div class="contact-card-action">
               <a href="tel:0636012099">📞 โทรเลย</a>
             </div>
@@ -208,7 +321,7 @@
           <div class="contact-card-icon green">💬</div>
           <div class="contact-card-body">
             <div class="contact-card-label">LINE Official</div>
-            <div class="contact-card-main">Ready-หมูกรอบ</div>
+            <div class="contact-card-main">WINWIN-หมูกรอบ</div>
             <div class="contact-card-sub">แอดเพื่อน เพื่อรับโปรโมชั่นและสั่งสินค้าได้เลย</div>
             <div class="contact-card-action">
               <a href="https://lin.ee/Or3Vplm" target="_blank">💬 เพิ่มเพื่อน LINE</a>
@@ -221,10 +334,10 @@
           <div class="contact-card-icon blue">📘</div>
           <div class="contact-card-body">
             <div class="contact-card-label">Facebook</div>
-            <div class="contact-card-main">Ready-หมูกรอบ</div>
+            <div class="contact-card-main">WINWIN-หมูกรอบ</div>
             <div class="contact-card-sub">ติดตามข่าวสาร โปรโมชั่น และสั่งสินค้าผ่าน Messenger</div>
             <div class="contact-card-action">
-              <a href="https://www.facebook.com/placeholder" target="_blank">📘 ไปที่ Facebook</a>
+              <a href="https://www.facebook.com/share/1DwJQTAECG/?mibextid=wwXIfr" target="_blank">📘 ไปที่ Facebook</a>
             </div>
           </div>
         </div>
@@ -245,20 +358,12 @@
       <div class="hours-box fade-in">
         <h3>🕐 เวลาทำการ</h3>
         <div class="hours-row">
-          <span class="hours-label">จันทร์ – ศุกร์</span>
-          <span class="hours-value">06:00 – 18:00 น.</span>
+          <span class="hours-label">จันทร์ – อาทิตย์</span>
+          <span class="hours-value">08:30 – 17:00 น.</span>
         </div>
         <div class="hours-row">
-          <span class="hours-label">เสาร์</span>
-          <span class="hours-value">06:00 – 14:00 น.</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-label">โทรสั่ง / LINE</span>
+          <span class="hours-label">โทรสั่ง / LINE / Inbox</span>
           <span class="hours-value">08:00 – 20:00 น. ทุกวัน</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-label">อาทิตย์</span>
-          <span class="hours-value" style="color:#c0392b;">หยุดทำการ</span>
         </div>
       </div>
     </div>
@@ -267,21 +372,20 @@
     <div>
       <div class="cta-box fade-in">
         <div class="cta-box-inner">
-          <div style="font-size:3rem;margin-bottom:0.5rem;">🥩</div>
           <h2>สั่งซื้อได้เลยตอนนี้</h2>
           <p>ติดต่อผ่านช่องทางที่สะดวก เราพร้อมให้ข้อมูลและรับออร์เดอร์ทันที มีราคาพิเศษสำหรับการสั่งจำนวนมาก</p>
           <div class="cta-box-btns">
-            <a href="https://lin.ee/Or3Vplm?text=สนใจสั่งซื้อหมูกรอบ%20ขอรายละเอียดและราคาครับ" target="_blank" class="btn-line">
+            <a href="https://lin.ee/Or3Vplm" target="_blank" class="btn-line">
               💬 สั่งซื้อผ่าน LINE
             </a>
-            <a href="https://www.facebook.com/placeholder" target="_blank" class="btn-facebook">
+            <a href="https://www.facebook.com/share/1DwJQTAECG/?mibextid=wwXIfr" target="_blank" class="btn-facebook">
               📘 ติดต่อผ่าน Facebook
             </a>
             <a href="tel:0636012099" class="btn-phone">
               📞 โทร 063-601-2099
             </a>
-            <a href="tel:0855417053" class="btn-phone">
-              📞 โทร 085-541-7053
+            <a href="tel:0621516999" class="btn-phone">
+              📞 โทร 062-151-6999
             </a>
           </div>
         </div>
@@ -292,8 +396,7 @@
         <h3>💡 ทำไมต้องติดต่อเรา?</h3>
         <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-left:1.1rem;">
           <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">ราคาพิเศษสำหรับการสั่งจำนวนมาก</li>
-          <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">จัดส่งทั่วกรุงเทพและปริมณฑล</li>
-          <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">มีแพ็กเกจรายเดือนสำหรับร้านประจำ</li>
+          <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">จัดส่งทั่วประเทศ</li>
           <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">ตอบรับทุกช่องทาง ไม่เกิน 30 นาที</li>
           <li style="font-size:0.9rem;color:var(--gray-700);list-style:disc;line-height:1.55;">ทดลองสินค้าได้ก่อน MOQ ต่ำ</li>
         </ul>
@@ -315,8 +418,11 @@
 <footer class="footer">
   <div class="footer-grid">
     <div>
-      <div class="footer-logo-text">🥩 Ready-หมูกรอบ</div>
-      <p class="footer-desc">ผู้ผลิตและจำหน่ายหมูกรอบคุณภาพพรีเมียม สำหรับร้านอาหาร ผู้ค้าส่ง และธุรกิจอาหารทุกประเภท ด้วยประสบการณ์กว่า 10 ปี</p>
+      <div class="footer-logo-text" style="display:flex; align-items:center; gap:10px;">
+  <img src="images/RealLogo.png" style="width:40px; height:40px; object-fit:contain;">
+  <span>WINWIN-หมูกรอบ</span>
+      </div>
+      <p class="footer-desc">ผู้ผลิตและจำหน่ายหมูกรอบคุณภาพพรีเมียม สำหรับร้านอาหาร ผู้ค้าส่ง และธุรกิจอาหารทุกประเภท ส่งทั่วไทย</p>
       <div class="footer-social">
         <a href="https://www.facebook.com/placeholder" target="_blank" title="Facebook">📘</a>
         <a href="https://lin.ee/Or3Vplm" target="_blank" title="LINE">💬</a>
@@ -327,6 +433,8 @@
       <ul class="footer-links">
         <li><a href="index.html">หน้าแรก</a></li>
         <li><a href="products.html">สินค้าทั้งหมด</a></li>
+        <li><a href="#features-section">จุดเด่น</a></li>
+        <li><a href="#reviews-section">รีวิวลูกค้า</a></li>
         <li><a href="contact.html">ติดต่อเรา</a></li>
       </ul>
     </div>
@@ -335,30 +443,30 @@
       <ul class="footer-links">
         <li><a href="product-1.html">หมูกรอบทอดรอบแรก</a></li>
         <li><a href="product-2.html">หมูกรอบพร้อมขาย</a></li>
-        <li><a href="products.html">แพ็กส่งร้าน</a></li>
-        <li><a href="contact.html">สั่งทำพิเศษ</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-heading">ติดต่อเรา</div>
       <div class="footer-contact">
         <div class="footer-contact-item">
-          <span>📞</span>
+          <span class="icon">📞</span>
           <span>
             <a href="tel:0636012099" style="color:#fff;font-weight:bold;">063-601-2099</a><br/>
-            <a href="tel:0855417053" style="color:#fff;font-weight:bold;">085-541-7053</a>
+            <a href="tel:0855417053" style="color:#fff;font-weight:bold;">062-151-6999</a>
           </span>
         </div>
-        <small style="opacity:0.8;">📞 โทรสั่งได้ทันที (08:00–20:00)</small>
-        <div class="footer-contact-item"><span></span><a href="https://lin.ee/Or3Vplm" target="_blank">💬 LINE: Ready-หมูกรอบ</a></div>
-        <div class="footer-contact-item"><span>📘</span><a href="https://www.facebook.com/placeholder" target="_blank">Facebook: Ready-หมูกรอบ</a></div>
-        <div class="footer-contact-item"><span>📍</span><span>นครสวรรค์ อำเภอเมือง 60000</span></div>
-        <div class="footer-contact-item"><span>🕐</span><span>จ.–ส. 06:00–18:00 น.</span></div>
+        <small style="opacity:0.8;">📞 โทรสั่งได้ทันที (08:30–00:00)</small>
+        <div class="footer-contact-item">
+          <span class="icon"></span>
+          <a href="https://lin.ee/Or3Vplm" target="_blank">💬 LINE: WINWIN-หมูกรอบ</a>
+        </div>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>นครสวรรค์ อำเภอเมือง 60000</span></div>
+        <div class="footer-contact-item"><span class="icon">🕐</span><span>จ.–อา. 08:30–17:00 น.</span></div>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2567 Ready-หมูกรอบ | สงวนลิขสิทธิ์</span>
+    <span>© 2567 WINWIN-หมูกรอบ | สงวนลิขสิทธิ์</span>
     <span>ออกแบบด้วย ❤️ เพื่อธุรกิจอาหารไทย</span>
   </div>
 </footer>
