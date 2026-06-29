@@ -367,6 +367,174 @@
     }
     .hero-img-badge .badge-big { font-family: 'Noto Serif Thai', serif; font-size: 1.4rem; font-weight: 700; display: block; }
     .hero-img-badge .badge-small { font-size: 0.75rem; opacity: 0.85; }
+/* ===== PROMO BANNER ===== */
+.promo-banner {
+  background: var(--cream);
+  padding: 3rem 2rem 0;
+}
+
+.promo-banner .container {
+  max-width: 1200px;
+}
+
+.promo-card {
+  background: var(--white);
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1.5px solid var(--gold-pale);
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.promo-image {
+  min-height: 360px;
+}
+
+.promo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo-content {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-tag {
+  display: inline-flex;
+  width: fit-content;
+  background: var(--red);
+  color: #fff;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.promo-content h2 {
+  font-family: 'Noto Serif Thai', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.22;
+  color: var(--red-dark);
+  margin-bottom: 1rem;
+}
+
+.promo-content h2 span {
+  color: var(--red);
+}
+
+.promo-content p {
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.promo-action {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  padding: 0.75rem;
+  border-radius: 22px;
+  background: #fff7ef;
+  border: 2px solid #f1d5a8;
+  width: fit-content;
+  box-shadow: 0 10px 25px rgba(139,26,26,0.08);
+}
+
+.promo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 54px;
+  padding: 0 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: 0.25s;
+  white-space: nowrap;
+}
+
+.promo-btn:hover {
+  transform: translateY(-3px);
+}
+
+.promo-btn-detail {
+  background: #ffffff;
+  color: var(--red);
+  border: 2px solid var(--gold);
+}
+
+.promo-btn-detail:hover {
+  background: var(--gold-pale);
+}
+
+.promo-btn-line {
+  background: #06C755;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow:
+    0 0 0 3px rgba(6,199,85,.22),
+    0 10px 25px rgba(6,199,85,.35);
+}
+
+.promo-btn-line:hover {
+  box-shadow:
+    0 0 0 4px rgba(6,199,85,.35),
+    0 16px 35px rgba(6,199,85,.45);
+}
+
+@media (max-width: 900px) {
+  .promo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-image {
+    min-height: auto;
+  }
+
+  .promo-image img {
+    aspect-ratio: 16 / 7;
+  }
+
+  .promo-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .promo-banner {
+    padding: 1.75rem 1.25rem 0;
+  }
+
+  .promo-card {
+    border-radius: 18px;
+  }
+
+  .promo-image img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .promo-content {
+    padding: 1.4rem;
+  }
+
+  .promo-action {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .promo-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
 
     /* ===== FEATURES ===== */
     .features { background: var(--white); }
@@ -643,6 +811,57 @@
       </div>
     </div>
   </div>
+</section>
+<!-- ===== PROMO BANNER ===== -->
+<section class="promo-banner">
+    <div class="container">
+
+        <div class="promo-card">
+
+            <div class="promo-image">
+                <img src="images/promo-banner.png"
+                     alt="โปรโมชั่นหมูกรอบ WINWIN"
+                     loading="lazy">
+            </div>
+
+            <div class="promo-content">
+
+                <span class="promo-tag">
+                    🔥 โปรโมชั่นประจำเดือน
+                </span>
+
+                <h2>
+                    เปิดบิล 10 กก.ขึ้นไป!<br>
+                    เหลือเพียง <span>380 บาท/กก.</span>
+                </h2>
+
+                <p>
+                    หมูกรอบกึ่งสำเร็จรูปคุณภาพพรีเมียม
+                    สำหรับร้านอาหาร ร้านข้าวหมูแดง
+                    ร้านก๋วยเตี๋ยว และธุรกิจอาหาร
+                    พร้อมจัดส่งทั่วประเทศ
+                </p>
+
+                <div class="promo-action">
+
+  <a href="products.html"
+     class="promo-btn promo-btn-detail">
+    ดูรายละเอียดสินค้า
+  </a>
+
+  <a href="https://lin.ee/Or3Vplm?text=สนใจโปรโมชั่น%2015%20กก.%20ขึ้นไป"
+     target="_blank"
+     class="promo-btn promo-btn-line">
+    💬 สั่งซื้อเลย
+  </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
 </section>
 
 <!-- ===== FEATURES ===== -->
